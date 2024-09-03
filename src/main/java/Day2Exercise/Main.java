@@ -46,9 +46,24 @@ public class Main {
         {
             String result = string1.substring(0, index) +
                     string1.substring(index + string2.length());
-            System.out.println(result);
+            System.out.println("Search result: " + result);
         }
 
-    }
+        Scanner inputword = new Scanner(System.in);
+        System.out.print("Input word: ");
+        String str = inputword.nextLine(), reverseStr = "";
 
+        int strLength = str.length();
+
+        for (int i = (strLength - 1); i >=0; --i) {
+            reverseStr = reverseStr + str.charAt(i);
+        }
+
+        if (str.toLowerCase().equals(reverseStr.toLowerCase())) {
+            System.out.println(str + " is a Palindrome String.");
+        }
+        else {
+            System.out.println(str + " is not a Palindrome String.");
+        }
+    }
 }
