@@ -33,6 +33,21 @@ public class Main {
             System.out.println(number + " is odd");
         }
 
+        //search by word
+        String string1 = "Hello world";
+        String string2 = "ell";
+
+        int index = string1.indexOf(string2);
+        if (index == -1)
+        {
+          System.out.println("not found");  // Not found. What do you want to do?
+        }
+        else
+        {
+            String result = string1.substring(0, index) +
+                    string1.substring(index + string2.length());
+            System.out.println(result);
+        }
 
     }
 
