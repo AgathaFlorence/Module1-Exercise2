@@ -21,6 +21,18 @@ public class Main {
         double km = cm / 100000;
         System.out.println(cm + " cm equals to " + km + "km");
 
+        //Even or odd numbers
+        Scanner inputnumber = new Scanner(System.in);
+
+        System.out.print("Input number: ");
+        double number = inputnumber.nextDouble();
+
+        if (number % 2 == 0) {
+            System.out.println(number + " is even");
+        } else {
+            System.out.println(number + " is odd");
+        }
+
 
     }
 
