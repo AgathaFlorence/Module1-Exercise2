@@ -35,7 +35,10 @@ public class Main {
 
         //search by word
         String string1 = "Hello world";
-        String string2 = "ell";
+        Scanner inputsearchword = new Scanner(System.in);
+        System.out.print("Input search: ");
+
+        String string2 = inputsearchword.nextLine();
 
         int index = string1.indexOf(string2);
         if (index == -1)
